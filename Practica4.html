@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	
+<head>
+    <meta charset="UTF-8">
+    <title> APIs HTML5 </title>
+
+</head>
+
+<body>
+    <h2> Reproductor de vídeo local </h2>
+        <p>Seleccione el archivo a cargar</p>
+        <label class="boton">
+            <input type="file" name="file" id="file" accept=".webm,.mp4,.ogv";></input>
+        </label>
+
+<figure style="text-align: center">
+	<video  id="video" width="650" poster="poster.jpg"> 
+       El reproductor que está usando no permite reproducir este contenido
+    </video>
+</figure>
+    
+	<div id="videoButtons">
+        <button onclick="document.getElementById('video').play();">Reproducir</button>
+        <button onclick="document.getElementById('video').pause();">Pausa</button>
+        <button onclick="document.getElementById('video').volume += 0.1;">Subir Volumen</button>
+        <button onclick="document.getElementById('video').volume -= 0.1;">Bajar Volumen</button>
+	</div>
+    <script type="text/javascript" src="Practica4.js"></script>
+</body>
+
+</html>
